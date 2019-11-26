@@ -61,6 +61,11 @@ public class LoginController {
 
     @RequestMapping(value = "/login", method = {RequestMethod.GET})
     public String login() {
-        return "pages/login";
+        return "pages/user/login";
+    }
+
+    @RequestMapping(value = "/index", method = {RequestMethod.GET})
+    public String index() {
+        return "pages/user/index";
     }
 }

@@ -27,6 +27,48 @@
         </sourceRoots>
       </configuration>
     </facet>
+    <facet type="web" name="Web3">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/resources/static/lib/advanced-datatable/images/sort_asc.png" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/main/resources/static/lib/advanced-datatable/images" relative="/WEB-INF" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web4">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/resources/static/lib/font-awesome/fonts/fontawesome-webfont.woff" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/main/resources/static/lib/font-awesome/fonts" relative="/WEB-INF" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web5">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/resources/static/lib/bootstrap-timepicker/js/bootstrap-timepicker.js" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/main/resources/static/lib/bootstrap-timepicker/js" relative="/WEB-INF" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
