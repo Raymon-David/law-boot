@@ -32,9 +32,10 @@ public class LoginController {
      * @param requestJson
      * @return
      */
-    @PostMapping("/auth")
+    @RequestMapping("/login/auth")
     public JSONObject authLogin(@RequestBody JSONObject requestJson) {
         CommonUtil.hasAllRequired(requestJson, "username,password");
+        System.out.println(loginService.authLogin(requestJson));
         return loginService.authLogin(requestJson);
     }
 
