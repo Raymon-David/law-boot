@@ -2,6 +2,7 @@ package com.boot.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.boot.service.LoginService;
+import com.boot.service.UserService;
 import com.boot.util.CommonUtil;
 import com.boot.util.StringUtils;
 import org.activiti.engine.IdentityService;
@@ -25,6 +26,8 @@ public class LoginController {
     private LoginService loginService;
     @Autowired
     private IdentityService identityService;
+    @Autowired
+    private UserService userService;
 
     /**
      * 登录
@@ -67,6 +70,12 @@ public class LoginController {
 
     @RequestMapping(value = "/index", method = {RequestMethod.GET})
     public String index() {
+        return "pages/user/index";
+    }
+
+    @RequestMapping(value = "/test", method = {RequestMethod.GET})
+    public String test() {
+        System.out.println(userService.getAllRoles());
         return "pages/user/index";
     }
 }

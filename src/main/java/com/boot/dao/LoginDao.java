@@ -1,6 +1,7 @@
 package com.boot.dao;
 
 import com.alibaba.fastjson.JSONObject;
+import com.baomidou.mybatisplus.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Mapper
-public interface LoginDao {
+public interface LoginDao  extends BaseMapper {
     /**
      * 根据用户名和密码查询对应的用户
      *

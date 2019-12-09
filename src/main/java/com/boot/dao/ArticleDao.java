@@ -1,6 +1,7 @@
 package com.boot.dao;
 
 import com.alibaba.fastjson.JSONObject;
+import com.baomidou.mybatisplus.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 
@@ -13,7 +14,7 @@ import java.util.List;
  */
 @Component
 @Mapper
-public interface ArticleDao {
+public interface ArticleDao extends BaseMapper{
     /**
      * 新增文章
      *
